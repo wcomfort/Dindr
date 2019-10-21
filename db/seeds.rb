@@ -23,3 +23,18 @@ jte = Recipe.create(name: "Japanese Tamago Egg", link: "https://www.allrecipes.c
 
 
 
+soul_food= Flavor_Profile.create(name:"Soul Food")
+italian= Flavor_Profile.create(name:"Italian Cuisine")
+indian= Flavor_Profile.create(name:"Indian Cuisine")
+thai= Flavor_Profile.create(name:"Thai Cuisine")
+chinese= Flavor_Profile.create(name:"Chinese Cuisine")
+american=Flavor_Profile.create(name:"American Cuisine")
+cajun=Flavor_Profile.create(name:"Cajun Cuisine")
+mexican=Flavor_Profile.create(name:"Mexian Cuisine")
+mediterranean=Flavor_Profile.create(name:"Mediteranean Cuisine")
+middle_eastern=Flavor_Profile.create(name:"Middle Eastern Cuisine")
+african=Flavor_Profile.create(name:"African Cuisine")
+greek=Flavor_Profile.create(name:"Greek Cuisine")
+french=Flavor_Profile.create(name:"French Cuisine")
+korean=Flavor_Profile.create(name:"Korean Cuisine")
+jamaican=Flavor_Profile.create(name:"Jamaican Cuisine")
