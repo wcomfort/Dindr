@@ -1,0 +1,5 @@
+<h1>Here are the <%= @flavor_profile.name %> Recipes</h1>
+<% @flavor_profile.recipes.each do |r| %>
+<%= link_to r.name, recipe_path(r) %><br><br>
+<% end %>
+<button><%= link_to "Flavor Profiles", flavor_profiles_path %></button>

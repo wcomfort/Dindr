@@ -10,12 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_21_161359) do
+ActiveRecord::Schema.define(version: 2019_10_21_190721) do
 
   create_table "flavor_profiles", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "recipe_flavor_profiles", force: :cascade do |t|
+    t.integer "recipe_id", null: false
+    t.integer "flavor_profile_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["flavor_profile_id"], name: "index_recipe_flavor_profiles_on_flavor_profile_id"
+    t.index ["recipe_id"], name: "index_recipe_flavor_profiles_on_recipe_id"
   end
 
   create_table "recipes", force: :cascade do |t|
@@ -25,11 +34,6 @@ ActiveRecord::Schema.define(version: 2019_10_21_161359) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "recipes_flavor_profiles", force: :cascade do |t|
-    t.integer "recipe_id"
-    t.integer "flavor_profile_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
+  add_foreign_key "recipe_flavor_profiles", "flavor_profiles"
+  add_foreign_key "recipe_flavor_profiles", "recipes"
 end
