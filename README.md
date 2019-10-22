@@ -22,3 +22,34 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+*
+
+
+ 
+
+* FLAVOR PROFILES
+* create more spicy smoky etc
+* filter on index
+* Save to account 
+
+* RECIPE
+* Add source -link to homepage 
+* Add multiple flavor profiles
+* world region-integer to correspond with continent 
+* Add description
+
+
+* REVIEWS
+* user_id 
+* recipe_id
+* rating
+
+* User
+* login 
+* see reviews 
+* save and view fav recipes
+* update profile 
+* add recipes
+* favorite flavor profiles
