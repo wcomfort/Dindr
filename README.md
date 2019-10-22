@@ -30,7 +30,6 @@ Things you may want to cover:
  
 
 * FLAVOR PROFILES
-* create more spicy smoky etc
 * filter on index
 * Save to account 
 

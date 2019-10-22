@@ -1,5 +1,9 @@
 <h1>Which Tastes do You Like?</h1>
-<%= form_for @tastes.each do |f| %>
-<%= f.label :t.name
-<%= f.submit "Select Tastes" %>
+
+<%= form_tag filtered_tastes_path do %>
+    <% @tastes.each do |t| %>
+    <%= check_box_tag 't_ids[]', t.id -%>
+    <%= h t.name -%><br><br> 
+    <% end %>
+    <%= submit_tag "Filter Tastes" %> 
 <% end %><br><br>
