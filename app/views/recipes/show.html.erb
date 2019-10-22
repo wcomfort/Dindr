@@ -1,5 +1,7 @@
 <h1>Detail for <%= @recipe.name %></h1><br>
     <%= link_to "Recipe", "#{@recipe.link}", :target => "_blank" %><br><br>
+    <p>Description: <%= @recipe.description %></p>
+    <p>Source: <%= @recipe.source %></p>
     <% @recipe.flavor_profiles.each do |fp| %>
     <button><%= link_to fp.name, flavor_profile_path(fp) %></button><br><br>
     <% end %>

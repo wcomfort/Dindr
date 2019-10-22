@@ -38,6 +38,12 @@ Things you may want to cover:
 * Add source -link to homepage 
 * Add multiple flavor profiles
 * world region-integer to correspond with continent 
+    world region keys
+    * 1- Asia
+    * 2- African
+    * 3- Europe
+    * 4- Latin American
+    * 5- N. American 
 * Add description
 
 

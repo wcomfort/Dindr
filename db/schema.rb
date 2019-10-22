@@ -30,6 +30,9 @@ ActiveRecord::Schema.define(version: 2019_10_21_212945) do
   create_table "recipes", force: :cascade do |t|
     t.string "name"
     t.string "link"
+    t.string "source"
+    t.string "description"
+    t.integer "world_region"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
