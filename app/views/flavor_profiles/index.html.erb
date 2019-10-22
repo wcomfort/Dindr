@@ -1,9 +1,7 @@
 <h1>What are You in the Mood For?</h1>
 <% @flavor_profiles.each do |fp| %>
 <%= link_to fp.name, flavor_profile_path(fp) %><br>
-<% end %>
+<% end %><br><br>
 
-<%= form_for @flavor_profile do |f| %>
-<%= f.collection_select(:flavor_profile, :flavor_profile_id, FlavorProfile.all, :id, :name, prompt: "Filter Flavor Profiles") %><br>
-<%= f.submit "Filter" %>
-<% end %>
+
+

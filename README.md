@@ -35,7 +35,6 @@ Things you may want to cover:
 * Save to account 
 
 * RECIPE
-* Add source -link to homepage 
 * Add multiple flavor profiles
 * world region-integer to correspond with continent 
     world region keys
@@ -44,7 +43,7 @@ Things you may want to cover:
     * 3- Europe
     * 4- Latin American
     * 5- N. American 
-* Add description
+
 
 
 * REVIEWS

@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   
   resources :recipes, only: [:index, :show]
   resources :flavor_profiles, only: [:index, :show]
+  resources :tastes, only: [:index, :show]
 end
 

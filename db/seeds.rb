@@ -9,7 +9,18 @@
 Recipe.destroy_all
 FlavorProfile.destroy_all
 RecipeFlavorProfile.destroy_all
-# User.destroy_all 
+Taste.destroy_all
+RecipeTaste.destroy_all
+User.destroy_all 
+
+spicy = Taste.create(name:"Spicy")
+smokey = Taste.create(name:"Smokey")
+savory = Taste.create(name:"Savory")
+sweet = Taste.create(name:"Sweet")
+salty = Taste.create(name:"Salty")
+earthy = Taste.create(name:"Earthy")
+creamy = Taste.create(name:"Creamy")
+crunchy = Taste.create(name:"Crunchy")
 
 srq = Recipe.create(name: "Spinach Ricotta Quiche", link: "https://www.allrecipes.com/recipe/275439/spinach-ricotta-quiche/?internalSource=popular&referringContentType=Homepage&clickId=cardslot%204", source: "Allrecipes", description: "Delicious Spinach Quiche", world_region: 3)
 scbs = Recipe.create(name: "Slow Cooker Beef Stew", link: "https://www.allrecipes.com/recipe/14685/slow-cooker-beef-stew-i/?internalSource=popular&referringContentType=Homepage&clickId=cardslot%209", source: "Allrecipes", description: "Easy low and slow cooked beef", world_region: 5)
@@ -49,18 +60,9 @@ greek=FlavorProfile.create(name:"Greek Cuisine")
 french=FlavorProfile.create(name:"French Cuisine")
 japanese=FlavorProfile.create(name:"Japanese Cuisine")
 jamaican=FlavorProfile.create(name:"Jamaican Cuisine")
-spicy = FlavorProfile.create(name:"Spicy")
-smokey = FlavorProfile.create(name:"Smokey")
-savory = FlavorProfile.create(name:"Savory")
-sweet = FlavorProfile.create(name:"Sweet")
-salty = FlavorProfile.create(name:"Salty")
-earthy = FlavorProfile.create(name:"Earthy")
-creamy = FlavorProfile.create(name:"Creamy")
-cruncy = FlavorProfile.create(name:"Crunchy")
 
 
-
-qfp = RecipeFlavorProfile.create(recipe_id: 1, flavor_profile_id: 13)
+srq = RecipeFlavorProfile.create(recipe: jte, flavor_profile: japanese)
 bsfp = RecipeFlavorProfile.create(recipe_id: 2, flavor_profile_id: 6)
 imsfp = RecipeFlavorProfile.create(recipe_id: 3, flavor_profile_id: 2)
 mcfp = RecipeFlavorProfile.create(recipe_id: 4, flavor_profile_id: 8)
@@ -79,6 +81,31 @@ tbfp = RecipeFlavorProfile.create(recipe_id: 16, flavor_profile_id: 10)
 ppfp = RecipeFlavorProfile.create(recipe_id: 17, flavor_profile_id: 12)
 jrfp = RecipeFlavorProfile.create(recipe_id: 18, flavor_profile_id: 11)
 jcfp = RecipeFlavorProfile.create(recipe_id: 19, flavor_profile_id: 15)
+
+srqt = RecipeTaste.create(recipe_id: 1, taste_id: 3)
+bsfpt = RecipeTaste.create(recipe_id: 2, taste_id: 5)
+imsfpt = RecipeTaste.create(recipe_id: 3, taste_id: 5)
+mcfpt = RecipeTaste.create(recipe_id: 4, taste_id: 1)
+acfpt = RecipeTaste.create(recipe_id: 5, taste_id: 4)
+sdfpt = RecipeTaste.create(recipe_id: 6, taste_id: 4)
+cssfpt = RecipeTaste.create(recipe_id: 7, taste_id: 7)
+bfpt = RecipeTaste.create(recipe_id: 8, taste_id: 2)
+tmcfpt = RecipeTaste.create(recipe_id: 9, taste_id: 1)
+mccfpt = RecipeTaste.create(recipe_id: 10, taste_id: 6)
+jefpt = RecipeTaste.create(recipe_id: 11, taste_id: 4)
+bjfpt = RecipeTaste.create(recipe_id: 12, taste_id: 3)
+pdfpt = RecipeTaste.create(recipe_id: 13, taste_id: 1)
+erfpt = RecipeTaste.create(recipe_id: 14, taste_id: 8)
+csfpt = RecipeTaste.create(recipe_id: 15, taste_id: 7)
+tbfpt = RecipeTaste.create(recipe_id: 16, taste_id: 6)
+ppfpt = RecipeTaste.create(recipe_id: 17, taste_id: 3)
+jrfpt = RecipeTaste.create(recipe_id: 18, taste_id: 3)
+jcfpt = RecipeTaste.create(recipe_id: 19, taste_id: 1)
+
+
+
+
+
 
 
 20.times do 
