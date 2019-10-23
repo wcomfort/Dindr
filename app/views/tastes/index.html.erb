@@ -1,6 +1,8 @@
-<h1>Which Tastes do You Like?</h1>
 
-<%= form_tag filtered_tastes_path do %>
+
+<div class="wrapper">
+    <h1>Which Tastes do You Like?</h1>
+    <%= form_tag filtered_tastes_path do %>
     <% @tastes.each do |t| %>
     <%= check_box_tag 't_ids[]', t.id -%>
     <%= h t.name -%><br><br> 
@@ -8,4 +10,4 @@
     <%= submit_tag "Filter Tastes" %> 
 <% end %><br><br>
 
-<button><%= link_to "Cuisines", flavor_profiles_path, class: "button" %></button>
+<button><%= link_to "Cuisines", flavor_profiles_path, class: "button" %></button></div>

@@ -28,8 +28,28 @@
 
 body{
     background: url("DINDR.png");
-    background-size: 154%;
+    background-size: 160%;
     background-color: rgba(255, 255, 255, 0.4);
     background-blend-mode: lighten;
     background-repeat: no-repeat, repeat;
+}
+.welcomelogo{
+    width: 30%;
+    height: 350px;
+    border: solid black 5px;
+    color: red;
+    font-size: 125%;
+}
+
+#welcome-body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 150%;
+}
+
+.wrapper{
+    text-align: center;
 }

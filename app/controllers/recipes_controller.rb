@@ -12,7 +12,6 @@ class RecipesController < ApplicationController
 
    
     
-    def homepage
-    end
+    
     
 end
