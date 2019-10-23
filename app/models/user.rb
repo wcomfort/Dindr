@@ -5,7 +5,8 @@ class User < ApplicationRecord
     
     #methods here
     def display_user_name
-        return self.user.capitalize
+
+        return self.first_name.capitalize
     end
 
 

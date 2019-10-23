@@ -14,9 +14,9 @@ class UsersController < ApplicationController
         @user = User.new(strong_params)
         if @user.valid?
             @user.save
-            sessiom[:user_id]=@user.id
-            redirect_to recipe_path,
-            notice: "#{@user.username}created succesfully"
+            session[:user_id]=@user.id
+            redirect_to recipes_path,
+            notice: "Nice! #{@user.display_user_name} created succesfully"
         else
             render :new
         end
