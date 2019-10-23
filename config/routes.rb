@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get '/', to: 'recipes#homepage'
+  get '/', to: 'static#welcome'
+  get '/about', to: 'static#about'
+  get '/home', to: 'static#homepage'
   post '/filtered_taste', to: 'tastes#get_recipes_by_taste', as: 'filtered_tastes' 
   get '/filtered_tastes', to: 'tastes#filtered', as: 'filtered'
   
