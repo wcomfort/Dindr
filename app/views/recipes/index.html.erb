@@ -1,5 +1,5 @@
 <h3>Welcome, <%=@user.first_name%></h3> <br>
 <h1>Here are Our Recipes</h1>
 <% @recipes.each do |r| %>
-<%= link_to "#{r.name}", recipe_path(r)  %><br>
+<%= link_to "#{r.name}", recipe_path(r), class: "button" %><br>
 <% end %>
