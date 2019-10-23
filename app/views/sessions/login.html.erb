@@ -1,0 +1,13 @@
+<%if notice%>
+    <di> <%=notice%></dv>
+<%end%>
+
+<h1>User Login</h1>
+
+<%=form_tag "/login" do%>
+<%=label :email, "Enter Email"%> 
+<%=text_field_tag :email%><br><br>
+<%=label :password, "Enter Password"%>
+<%=password_field_tag :password%>
+<%=submit_tag "Login"%>
+<%end%>
