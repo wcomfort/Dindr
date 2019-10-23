@@ -10,8 +10,6 @@ class UsersController < ApplicationController
         cookies["last_visited"]=@recipe.name
     end
 
-  
-
     def create
         @user = User.new(strong_params)
         if @user.valid?
