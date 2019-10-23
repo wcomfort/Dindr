@@ -7,9 +7,13 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c8686bdcb.js" crossorigin="anonymous"></script>
+    
   </head>
-
+  
   <body>
+    <a id="logo-text" href="/"><i class="fas fa-utensils fa-2x"></i> DINDR: IDK what do you want?</a>
     <%= yield %>
   </body>
 </html>

@@ -8,4 +8,7 @@ class RecipesController < ApplicationController
         @recipe = Recipe.find(params[:id])
     end
     
+    def homepage
+    end
+    
 end

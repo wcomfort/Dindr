@@ -2,4 +2,4 @@
 <% @flavor_profile.recipes.each do |r| %>
 <%= link_to r.name, recipe_path(r) %><br><br>
 <% end %>
-<button><%= link_to "Flavor Profiles", flavor_profiles_path %></button>
+<button><%= link_to "Back to Cuisines", flavor_profiles_path, class: "button" %></button>

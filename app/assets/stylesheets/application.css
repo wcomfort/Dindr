@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+#logo-text{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+.button{
+    text-decoration: none;
+    color: black;
+}
+
+
+body{
+    background: url("DINDR.jpeg");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+}

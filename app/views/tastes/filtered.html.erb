@@ -1,5 +1,8 @@
 <h1>Here are the Recipes that Match your Tastes!</h1>
 <% @list[0].each do |r| %>
 <%= link_to r.name, recipe_path(r) %><br>
-<% end %>
+<% end %><br><br>
+
+<button><%= link_to "Taste Profiles", tastes_path, class: "button" %></button>
+
 
