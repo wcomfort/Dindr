@@ -28,10 +28,14 @@
 
 body{
     background: url("DINDR.png");
-    background-size: 160%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-size: 165%;
+    background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
     background-repeat: no-repeat, repeat;
+    font-family: 'Ubuntu', sans-serif;
+    color: darkslategray;
+    font-size: 110%;
+    font-weight: 200;
 }
 .welcomelogo{
     width: 30%;

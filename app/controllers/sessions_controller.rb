@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-
+   
 def process_login
     @user=User.find_by(email:params[:email],password:params[:password])
     if @user

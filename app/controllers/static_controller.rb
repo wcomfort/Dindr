@@ -4,6 +4,7 @@ class StaticController < ApplicationController
     end
 
     def about
+        @current_user = current_user
     end
 
     def welcome
