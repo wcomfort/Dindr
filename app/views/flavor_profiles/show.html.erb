@@ -1,9 +1,13 @@
 <div id="center-align">
         <div class="wrapper">
-                <h1>Here are the <%= @flavor_profile.name %> Recipes</h1><br><br>
-                <% @flavor_profile.recipes.each do |r| %>
-                <%= link_to r.name, recipe_path(r), class: "button" %><br><br>
-                <% end %>
+                <h1>Here are the <%= @flavor_profile.name %> Recipes</h1>
+                <div class="list">
+                        <ul>
+                        <% @flavor_profile.recipes.each do |r| %>
+                        <li><%= link_to r.name, recipe_path(r), class: "link" %><br></li>
+                        <% end %>
+                        </ul>
+                </div>
                 <button><%= link_to "Back to Cuisines", flavor_profiles_path, class: "button" %></button>
         </div>
 </div>

@@ -1,7 +1,14 @@
-<div class="wrapper">
-    <h1>Here are Our Recipes</h1>
-    <% @recipes.each do |r| %>
-    <%= link_to "#{r.name}", recipe_path(r), class: "button" %><br>
-    <% end %>
+<div id="center-align">
+     <div class="wrapper">
+        <h1>Here are Our Recipes</h1>
+        <div class="list">
+            <ul>
+                <% @recipes.each do |r| %>
+                <li><%= link_to "#{r.name}", recipe_path(r), class: "link" %><br></li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
 </div>
+
 

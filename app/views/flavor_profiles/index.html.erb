@@ -1,9 +1,13 @@
 <div id="center-align">
         <div class="wrapper">
                 <h1>What are You in the Mood For?</h1>
-                <% @flavor_profiles.each do |fp| %>
-                <%= link_to fp.name, flavor_profile_path(fp), class: "button" %><br>
-                <% end %><br><br>
+                <div class="list">
+                         <ul>
+                                <% @flavor_profiles.each do |fp| %>
+                                <li><%= link_to fp.name, flavor_profile_path(fp), class: "link" %><br></li>
+                                <% end %><br><br>
+                         </ul>
+                </div>
         </div>
 </div>
 

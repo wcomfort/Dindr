@@ -16,11 +16,11 @@
 #logo-text{
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
-    color: red;
+    color: #9A031E;
     font-size: 20px;
 }
 
-.button{
+.link{
     text-decoration: none;
     color: black;
 }
@@ -28,21 +28,21 @@
 
 body{
     background: url("DINDR.png");
-    background-size: 165%;
+    background-size: 170%;
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
     background-repeat: no-repeat, repeat;
     font-family: 'Ubuntu', sans-serif;
-    color: darkslategray;
+    color: #121619;
     font-size: 110%;
     font-weight: 200;
 }
 .welcomelogo{
     width: 30%;
     height: 350px;
-    border: solid black 5px;
-    color: red;
-    font-size: 125%;
+    border: solid #121619 5px;
+    color: #9A031E;
+    font-size: 110%;
 }
 
 #welcome-body{
@@ -69,5 +69,42 @@ body{
 
 .about{
     width: 40%;
+    text-align: center;
     
 }
+
+.topnav {
+    background-color: #E8C547;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    color: #9A031E;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    vertical-align: middle;
+    display: inline-bloc;
+  }
+
+  .topnav a:hover {
+    background-color: #009DDC;
+    color: #121619;
+  }
+  .button {
+    background-color: #E8C547;
+    border: none;
+    color: #9A031E;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .list {
+      text-align: left;
+  }
+  
