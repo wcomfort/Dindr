@@ -7,6 +7,9 @@ class User < ApplicationRecord
     validates :email, presence: true, uniqueness: true
     validates :password, presence: true 
     
+    has_many :favorites
+    has_many :recipes, through: :favorites
+    
     #methods here
 
     def display_user_name

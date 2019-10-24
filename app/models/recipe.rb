@@ -5,4 +5,7 @@ class Recipe < ApplicationRecord
     has_many :tastes, through: :recipe_tastes
     has_many :reviews
     has_many :users, through: :reviews
+    has_many :favorites
+    has_many :users, through: :favorites
+
 end

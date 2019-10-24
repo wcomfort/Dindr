@@ -1,21 +1,15 @@
 class ReviewsController < ApplicationController
-    def index
-        @reviews = Review.all
-    end
 
-    def show
-        @review = Review.find(params[:id])
-    end
-
-    def news
+    def new
         @review = Review.new
+        @review.user_id= session[:user_id]   
     end
 
     def create
         @review = Review.new(strong_params)
         if @review.valid?
             @review.save
-            redirect_to review_path(@review)
+            redirect_to recipe_path(@review.recipe)
         else
             render :new
         end
@@ -23,6 +17,10 @@ class ReviewsController < ApplicationController
 
     def edit
         @review = Review.find(params[:id])
+    end
+
+    def show
+        @review=Review.find(params[:id])
     end
 
     def update
@@ -42,7 +40,7 @@ class ReviewsController < ApplicationController
     private
 
     def strong_params
-        params.require(:review).permit(:user_id, :recipe_id)
+        params.require(:review).permit(:user_id, :recipe_id, :content)
     end
 
 end
