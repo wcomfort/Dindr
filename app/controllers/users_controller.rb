@@ -15,7 +15,7 @@ class UsersController < ApplicationController
         if @user.valid?
             @user.save
             session[:user_id]=@user.id
-            redirect_to recipes_path,
+            redirect_to about_path,
             notice: "Nice! #{@user.display_user_name} created succesfully"
         else
             render :new

@@ -1,9 +1,13 @@
-<h1>Detail for <%= @recipe.name %></h1><br>
-    Click to view: <%= link_to "Recipe", "#{@recipe.link}", :target => "_blank" %><br><br>
-    <p>Description: <%= @recipe.description %></p>
-    <p>Source: <%= @recipe.source %></p>
-    <% @recipe.flavor_profiles.each do |fp| %>
-    <button><%= link_to fp.name, flavor_profile_path(fp) %></button><br><br>
-    <% end %>
-
-<button><%= link_to "Flavor Profiles", flavor_profiles_path, class: "button" %></button>
+<div id="center-align">
+    <div class="wrapper">
+        <h1>Detail for <%= @recipe.name %></h1><br>
+        Click to view: <%= link_to "Recipe", "#{@recipe.link}", :target => "_blank" %><br><br>
+        <p>Description: <%= @recipe.description %></p>
+        <p>Source: <%= @recipe.source %></p>
+        <% @recipe.flavor_profiles.each do |fp| %>
+        <button><%= link_to fp.name, flavor_profile_path(fp), class: "button" %></button><br><br>
+        <% end %>
+    
+    <button><%= link_to "Flavor Profiles", flavor_profiles_path, class: "button" %></button>
+    </div>
+</div>

@@ -53,3 +53,17 @@ body{
 .wrapper{
     text-align: center;
 }
+
+#center-align{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 120%;
+}
+
+.about{
+    width: 40%;
+    
+}

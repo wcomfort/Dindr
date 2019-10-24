@@ -4,7 +4,7 @@ def process_login
     @user=User.find_by(email:params[:email],password:params[:password])
     if @user
         session[:user_id]=@user.id
-        redirect_to recipes_path
+        redirect_to about_path
     else
         flash.now["notice"]="No user found with that email. Please enter the correct email/or password, or create a new account."
     render :login 

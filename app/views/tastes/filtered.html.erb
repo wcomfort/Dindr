@@ -1,8 +1,13 @@
-<h1>Here are the Recipes that Match your Tastes!</h1>
-<% @list[0].each do |r| %>
-<%= link_to r.name, recipe_path(r) %><br>
-<% end %><br><br>
+<div id="center-align">
+    <div class="wrapper">
+            <h1>Here are the Recipes that Match your Tastes!</h1>
+            <% @list[0].each do |r| %>
+            <%= link_to r.name, recipe_path(r), class: "button" %><br>
+            <% end %><br><br>
+            
+            <button><%= link_to "Taste Profiles", tastes_path, class: "button" %></button>
+    </div>
+</div>
 
-<button><%= link_to "Taste Profiles", tastes_path, class: "button" %></button>
 
 
