@@ -18,6 +18,7 @@
     text-decoration: none;
     color: #9A031E;
     font-size: 20px;
+    margin-top: 0;
 }
 
 .link{
@@ -76,17 +77,19 @@ body{
 .topnav {
     background-color: #E8C547;
     overflow: hidden;
+    display: block;
   }
 
   .topnav a {
     float: left;
     color: #9A031E;
-    text-align: center;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
     font-size: 17px;
     vertical-align: middle;
-    display: inline-bloc;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 2px;
   }
 
   .topnav a:hover {
