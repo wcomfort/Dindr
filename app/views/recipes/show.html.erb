@@ -14,17 +14,15 @@
     <%@recipe.reviews.each do |review|%> <br>
     <%=review.content%>
     <%end%>
-    <br><br>
+
 
 <%= form_for @favorite do |f| %>
 <%=f.hidden_field :user_id, value:session[:user_id]%>
 <%=f.hidden_field :recipe_id, value: @recipe.id%>
-<%=f.submit%>
-<%end%>
+<%= f.submit "Add Favorite", class: "button" %>
+<%end%><br>
 
-
-
-<button><%= link_to "Review this Reciple", new_review_path, class: "button" %></button>
+<button class="button"><%= link_to "Review this Reciple", new_review_path %></button>
 
     
     </div>

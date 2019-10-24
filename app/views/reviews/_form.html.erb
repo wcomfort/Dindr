@@ -1,7 +1,8 @@
+
 <h1>Please Take A Moment to Review The Recipes</h1>
 <%= form_for @review do |f| %>
 <%=f.collection_select :recipe_id, Recipe.all, :id, :name%> <br><br>
 <%=f.text_area :content%> <br>
 <%=f.hidden_field :user_id, :value=>session[:user_id]%><br><br>
- <%= f.submit%>
+ <%= f.submit "Create Review", class: "button" %>
 <%end%>
