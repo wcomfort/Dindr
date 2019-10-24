@@ -32,7 +32,6 @@ body{
     background-size: 170%;
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
-    background-repeat: no-repeat, repeat;
     font-family: 'Ubuntu', sans-serif;
     color: #121619;
     font-size: 110%;
@@ -41,7 +40,7 @@ body{
 .welcomelogo{
     width: 30%;
     height: 350px;
-    border: solid #121619 5px;
+    border: double #121619 5px;
     color: #9A031E;
     font-size: 110%;
 }
@@ -107,7 +106,22 @@ body{
     font-size: 16px;
   }
 
+  .button a{
+      text-decoration: none;
+      color: #9A031E;
+  }
+
   .list {
       text-align: left;
+  }
+
+  .list a:hover{
+    background-color: #9A031E;
+    color: #121619;
+  }
+
+  .tasteindex {
+      text-align: center;
+      padding-left: 50px;
   }
   

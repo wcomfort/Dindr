@@ -1,13 +1,15 @@
 <div id="center-align">
-        <div class="wrapper">
-                <h1>Which Tastes do You Like?</h1>
-                   <%= form_tag filtered_tastes_path do %>
-                   <% @tastes.each do |t| %>
-                   <%= check_box_tag 't_ids[]', t.id -%>
-                   <%= h t.name -%><br><br> 
-                    <% end %>
-                   <%= submit_tag "Filter Tastes", class: "button" %> 
-                   <% end %><br><br>
+                
+        <div class="tasteindex">
+                        <h1>Which Tastes do You Like?</h1>
+                 <div class="list">   <%= form_tag filtered_tastes_path do %>
+                        <% @tastes.each do |t| %>
+                        <%= check_box_tag 't_ids[]', t.id -%>
+                        <%= h t.name -%><br><br> 
+                         <% end %>
+                        <%= submit_tag "Filter Tastes", class: "button" %> 
+                        <% end %><br><br>
+                </div>
            </div>
 </div>
 

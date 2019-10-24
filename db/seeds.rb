@@ -62,7 +62,7 @@ japanese=FlavorProfile.create(name:"Japanese Cuisine")
 jamaican=FlavorProfile.create(name:"Jamaican Cuisine")
 
 
-srq = RecipeFlavorProfile.create(recipe: 1, flavor_profile: 13)
+srq = RecipeFlavorProfile.create(recipe_id: 1, flavor_profile_id: 13)
 bsfp = RecipeFlavorProfile.create(recipe_id: 2, flavor_profile_id: 6)
 imsfp = RecipeFlavorProfile.create(recipe_id: 3, flavor_profile_id: 2)
 mcfp = RecipeFlavorProfile.create(recipe_id: 4, flavor_profile_id: 8)

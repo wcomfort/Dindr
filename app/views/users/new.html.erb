@@ -1,5 +1,13 @@
 <div id="center-align">
     <div class="wrapper">
-            <%= render 'form' %>
+       
+        <% if @user.errors.any? %>
+        <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+            <% end %>
+        </ul>
+        <% end %>
+        <%= render 'form' %>
     </div> 
 </div>

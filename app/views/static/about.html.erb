@@ -2,7 +2,8 @@
     <div class="about">
         <h3>Welcome, <%= @current_user.display_user_name %>!</h3>
         <h3>About</h3>
+        <iframe src="https://giphy.com/embed/8rEB2xBh7eF8WL3kbo" width="300" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         <p>Thank you for choosing Dindr! Aicha and Will were tired of not knowing what to eat, so they created a website to decide for you. Just let us know what type of cuisine or what flavors you are craving and we'll supply you with delicious and easy recipes. Bon Appetit!</p>
-        <button><%= link_to "Let's Go!", home_path, class: "button" %></button>
+        <button class="button" ><%= link_to "Let's Go!", home_path %></button>
     </div>
 </div>

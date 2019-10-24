@@ -1,0 +1,13 @@
+<div id="center-align">
+        <div class="wrapper">
+                <h1>Here are the <%= @taste.name %> Recipes</h1>
+                <div class="list">
+                        <ul>
+                        <% @taste.recipes.each do |r| %>
+                        <li><%= link_to r.name, recipe_path(r), class: "link" %><br></li>
+                        <% end %>
+                        </ul>
+                </div>
+                <button class="button"><%= link_to "Back to Tastes", tastes_path %></button>
+        </div>
+</div>

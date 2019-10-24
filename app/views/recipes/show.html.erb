@@ -5,7 +5,10 @@
         <p>Description: <%= @recipe.description %></p>
         <p>Source: <%= @recipe.source %></p>
         <% @recipe.flavor_profiles.each do |fp| %>
-        <button><%= link_to fp.name, flavor_profile_path(fp), class: "button" %></button><br><br>
+        <button class="button"><%= link_to fp.name, flavor_profile_path(fp) %></button><br><br>
+        <% end %>
+        <% @recipe.tastes.each do |t| %>
+        <button class="button"><%= link_to t.name, taste_path(t) %></button><br><br>
         <% end %>
     
     </div>
