@@ -1,2 +1,6 @@
 <h1>Welcome, <%="#{@user.first_name}"%></h1>
+<h3>Here are your favorites:</h3>
+<%@user.favorites.each do |favorite| %>
+<%= favorite.recipe.name %><br>
+<% end %>
 
