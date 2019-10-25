@@ -4,6 +4,10 @@ class FavoritesController < ApplicationController
         @favorite=Favorite.new
      
     end
+
+    def index
+    end
+    
     
     def create
         @favorite = Favorite.create(strong_params)

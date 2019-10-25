@@ -1,6 +1,15 @@
-<h1>Welcome, <%="#{@user.first_name}"%></h1>
-<h3>Here are your favorites:</h3>
-<%@user.favorites.each do |favorite| %>
-<%= favorite.recipe.name %><br>
-<% end %>
+<div id="center-align">
+    <div class="wrapper">
+        <h1>Welcome, <%="#{@user.first_name}"%></h1>
+        <h3>Here are your favorites:</h3>
+        <%@user.favorites.each do |favorite| %>
+        <%= link_to favorite.recipe.name, recipe_path(favorite), class: "link" %><br>
+        <% end %>    
+    </div>
+</div>
 
+
+
+
+
+ 

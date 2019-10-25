@@ -11,10 +11,6 @@
         <button class="button"><%= link_to t.name, taste_path(t) %></button><br><br>
         <% end %>
 
-    <%@recipe.reviews.each do |review|%> <br>
-    <%=review.content%>
-    <%end%>
-
 
 <%= form_for @favorite do |f| %>
 <%=f.hidden_field :user_id, value:session[:user_id]%>
@@ -22,7 +18,12 @@
 <%= f.submit "Add Favorite", class: "button" %>
 <%end%><br>
 
-<button class="button"><%= link_to "Review this Reciple", new_review_path %></button>
+<button class="button"><%= link_to "Review this Reciple", new_review_path %></button><br><br>
+<h3>Reviews:</h3>
+
+<%@recipe.reviews.each do |review|%> <br>
+<%=review.content%>
+<%end%>
 
     
     </div>
