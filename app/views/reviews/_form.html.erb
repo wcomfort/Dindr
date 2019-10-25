@@ -4,5 +4,5 @@
 <%=f.collection_select :recipe_id, Recipe.all, :id, :name%> <br><br>
 <%=f.text_area :content%> <br>
 <%=f.hidden_field :user_id, :value=>session[:user_id]%><br><br>
- <%= f.submit "Create Review", class: "button" %>
+<%= f.submit "Create Review", class: "button" %>
 <%end%>

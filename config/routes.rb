@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   resources :tastes, only: [:index, :show]
   get "/login", to: "sessions#login"
   post "/login", to: "sessions#process_login"
-  get "/logout", to: "static#welcome"
+  get "/logout", to: "sessions#logout"
   resources :users
   resources :reviews
   resources :favorites, only: [:index, :show, :create]
