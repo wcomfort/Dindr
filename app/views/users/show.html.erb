@@ -1,10 +1,15 @@
 <div id="center-align">
     <div class="wrapper">
         <h1>Welcome, <%="#{@user.first_name}"%></h1>
-        <h3>Here are your favorites:</h3>
+        <h3>My Favorite Recipes:</h3>
         <%@user.favorites.each do |favorite| %>
         <%= link_to favorite.recipe.name, recipe_path(favorite), class: "link" %><br>
-        <% end %>    
+        <% end %>  
+        <h3>My Reviews:</h3>
+        <%@user.reviews.each do |r| %>
+        <p><%= r.content %>-
+            <%= link_to r.recipe.name, recipe_path(r.recipe), class: "link" %><br></p>
+        <% end %>   
     </div>
 </div>
 
